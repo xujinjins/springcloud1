@@ -1,0 +1,9 @@
+server:
+  port: 8033
+
+#注册到eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7003.com:7003/eureka/,http://eureka7004.com:7004/eureka/,http://eureka7005.com:7005/eureka/
+    register-with-eureka: false

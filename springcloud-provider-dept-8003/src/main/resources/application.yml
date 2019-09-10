@@ -1,0 +1,45 @@
+server:
+  port: 8003
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  config-location: classpath:mybatis/mybatis-config.xml
+#  type-aliases-package: com.com.xjj.domain
+
+#mysql的jdbc配置
+spring:
+  application:
+    name: microservicecloud-dept
+  datasource:
+    url: jdbc:mysql://192.168.159.10:3307/cloudDB03
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    dbcp2:
+      minidle: 5 #数据库链接最小维持数
+      initial-size: 5 #初始化连接数
+      max-total: 5 #最大连接数
+      max-wait-millis: #超时时间
+
+
+#日志配置-级别调整为最低
+logging:
+  level:
+    com:
+      xjj: trace
+
+#注册到eureka
+eureka:
+  client:
+    service-url:
+     # defaultZone: http://localhost:7001/eureka
+       defaultZone: http://eureka7004.com:7004/eureka/,http://eureka7003.com:7003/eureka/,http://eureka7005.com:7005/eureka/
+  instance:
+    instance-id: microserviceclouddept-8003 #eureka的访问地址
+    prefer-ip-address: true #访问路径可以显示ip地址，指的是eureka的访问路径
+
+info:
+  app.name: com.xjj-microservicecloud
+  company.name: com.com.xjj.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$

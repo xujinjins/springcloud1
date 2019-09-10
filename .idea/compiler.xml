@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloudproviderdept8003" />
+        <module name="springcloudproviderdept8002" />
+        <module name="springcloudproviderdept8001" />
+        <module name="microservicecloudeureka7004" />
+        <module name="microservicecloudeureka7003" />
+        <module name="jdkthreads9002" />
+        <module name="springcloudapi" />
+        <module name="springcloudproviderdepthistrix8001" />
+        <module name="nioAndNetty9002" />
+        <module name="microservicecloudeureka7005" />
+        <module name="microservicecloudconsumerdeptfeign" />
+        <module name="springbootredis9001" />
+        <module name="microservicecloudconsumerdept80" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="microservicecloud-eureka-7001" target="1.5" />
+      <module name="t" target="1.8" />
+      <module name="t1" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

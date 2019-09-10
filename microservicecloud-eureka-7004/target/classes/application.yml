@@ -1,0 +1,12 @@
+server:
+  port: 7004
+
+eureka:
+  instance:
+    hostname: eureka7004.com #c://windows//system32/drivers/etc目录下的hosts文件，域名映射配置文件
+  client:
+    register-with-eureka: false #不向服务中心注册自己
+    fetch-registry: false #表示自己就是注册中心，负责维护实例。
+    service-url:
+     # defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://eureka7003.com:7003/eureka/,http://eureka7005.com:7005/eureka/
